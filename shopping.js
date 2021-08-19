@@ -31,6 +31,7 @@ function updateProductNumber(product, price, isIncreasing){
         productTotal.innerText = productNumber * price;
         // calculate Total
          calculateTotal();
+
         
 
 
@@ -60,9 +61,13 @@ function getInputValue(product){
 }
 
 function calculateTotal(){
+    const bikeTotal = getInputValue('bike') * 150000;
+    const bagTotal = getInputValue('bag') * 500;
+    const shoesTotal = getInputValue('shoes') * 1100;
+
     const phoneTotal = getInputValue('phone') * 1219;
     const caseTotal = getInputValue('case') * 59;
-    const subTotal = phoneTotal + caseTotal;
+    const subTotal = phoneTotal + caseTotal + bikeTotal + bagTotal + shoesTotal;
     const tax = subTotal/10;
     const totalPrice = subTotal + tax;
     // update on the html
@@ -70,5 +75,34 @@ function calculateTotal(){
     document.getElementById('tax-amount').innerText = tax;
     document.getElementById('total-price').innerText = totalPrice;
 } 
+//Bike add to cart
+//handle bike increase decrease events 
+document.getElementById('bike-plus').addEventListener('click', function(){
+    updateProductNumber('bike', 150000, true);
+});
+document.getElementById('bike-minus').addEventListener('click', function(){
+    updateProductNumber('bike', 150000, false);
+});
+
+//bag add to cart
+
+//handle bag increase decrease events 
+document.getElementById('bag-plus').addEventListener('click', function(){
+    updateProductNumber('bag', 500, true);
+});
+document.getElementById('bag-minus').addEventListener('click', function(){
+    updateProductNumber('bag', 500, false);
+});
+
+//Blue-Shoes add to cart
+
+//handle bag increase decrease events 
+document.getElementById('shoes-plus').addEventListener('click', function(){
+    updateProductNumber('shoes', 1100, true);
+});
+document.getElementById('shoes-minus').addEventListener('click', function(){
+    updateProductNumber('shoes', 1100, false);
+});
+
 
 // Module-27.5 Pin matcher overview, Generate pin and display it goto new folder

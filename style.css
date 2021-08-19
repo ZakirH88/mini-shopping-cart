@@ -1,12 +1,17 @@
 h2{
 	text-align: center;
 	justify-content: center;
+	margin:30px ;
+}
+#cart-color{
+	color: coral;
+
 }
 body{
 	background: #fff;
 }
 .cart{
-	margin: 100px 0;
+	margin: 50px 0;
 	background-color: #F6F5FA;;
 	padding: 60px 0;
 }
@@ -55,6 +60,6 @@ body{
     float: right;
     padding: 10px 30px;
 	font-size: 19px;
-	background-color: #2FBE70;
+	background-color: #990a59;
 	border: none;
 }

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-   <title>Shopping Cart</title>
+   <title>Mini Shopping Cart</title>
    <meta charset="utf-8">
    <!--Module-27(17/8/2021): Module Overview and shopping cart-->
    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,9 +16,66 @@
 
    <section>
       <div class="container">
-         <h2>My shopping cart</h2>
+         <h2>Mini Shopping <span id="cart-color">Cart</span></h2>
          <div class="cart">
             <div class="col-md-12 col-lg-10 mx-auto">
+               <div class="cart-item">
+                  <div class="row">
+                     <div class="col-md-7 center-item">
+                        <img src="images/bike.png" alt="Bike">
+                        <h5>CBR-150 BIKE Red</h5>
+                     </div>
+
+                     <div class="col-md-5 center-item">
+                        <div class="input-group number-spinner">
+                           <button id="bike-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                           <input id="bike-number" type="number" min="0" class="form-control text-center" value="1">
+                           <button id="bike-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <h5>$<span id="bike-total">150000</span></h5>
+                        <img src="images/remove.png" alt="" class="remove-item">
+                     </div>
+                  </div>
+               </div>
+
+               <div class="cart-item">
+                  <div class="row">
+                     <div class="col-md-7 center-item">
+                        <img src="images/bag.png" alt="Bag">
+                        <h5>Bagpack Red</h5>
+                     </div>
+
+                     <div class="col-md-5 center-item">
+                        <div class="input-group number-spinner">
+                           <button id="bag-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                           <input id="bag-number" type="number" min="0" class="form-control text-center" value="1">
+                           <button id="bag-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <h5>$<span id="bag-total">500</span></h5>
+                        <img src="images/remove.png" alt="" class="remove-item">
+                     </div>
+                  </div>
+               </div>
+
+               <div class="cart-item">
+                  <div class="row">
+                     <div class="col-md-7 center-item">
+                        <img src="images/shoes.png" alt="shoes">
+                        <h5>Blue-Shoes</h5>
+                     </div>
+
+                     <div class="col-md-5 center-item">
+                        <div class="input-group number-spinner">
+                           <button id="shoes-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                           <input id="shoes-number" type="number" min="0" class="form-control text-center" value="1">
+                           <button id="shoes-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <h5>$<span id="shoes-total">1100</span></h5>
+                        <img src="images/remove.png" alt="" class="remove-item">
+                     </div>
+                  </div>
+               </div>
+
                <div class="cart-item">
                   <div class="row">
                      <div class="col-md-7 center-item">
@@ -67,9 +124,9 @@
                      </div>
 
                      <div class="col-md-4 status">
-                        <h5>$<span id="sub-total">1278</span></h5>
+                        <h5>$<span id="sub-total">151278</span></h5>
                         <h5>$<span id="tax-amount">0</span></h5>
-                        <h5>$<span id="total-price">1278</span></h5>
+                        <h5>$<span id="total-price">151278</span></h5>
                      </div>
                   </div>
                </div>
